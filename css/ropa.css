@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ----HEADER---- */
+
+.container1{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px; 
+    height: 50%; 
+    flex-wrap: wrap;
+}
+
+    .logo{
+        /* border: 1px solid green; */
+        display: inline-block;
+        padding:0; 
+        margin-left:50px;
+        font-family: 'Zen Dots', sans-serif;
+        font-size: 40px;
+        color:#FF8000;
+    }   
+    .logo span{
+
+        text-shadow: 10px 10px 10px #151515;
+    } 
+    .logo span:hover{
+        font-size: 45px;
+        transition: 0.4s linear;
+    }
+
+    .container2{
+        /* border: 2px solid blue;  */
+        display: flex; 
+        padding: 15px;
+        margin: 20px;
+        height: 100px;
+        margin-right: 50px;
+        width: 35em;
+        background-color:#707070;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 10px 10px 10px #151515;
+    }
+
+        ul li{
+            list-style: none;
+            padding: 3px;
+        }
+
+            ul li a{
+                /* border: 1px solid black;  */
+                text-decoration: none;
+                border-radius: 3px; 
+                padding: 10px;
+                color: #fff;
+                font-family: 'Antonio', cursive;
+                font-size: 25px;
+                transition: all 0.3s linear;
+            }
+
+            ul li a:hover{
+                background-color: rgba(255,128,0,.6);
+                transition: all 0.3s linear;
+                color: #2E2E2E;
+                padding: 15px;
+            }
+
+/* -------BODY-------- */
+body{
+    background-color: #2E2E2E;
+    color: #fff;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+#slider{
+    overflow: hidden;
+    width: 500px;
+    box-shadow: 2px 2px 40px rgb(231, 128, 11);
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+    border-radius: 10px;
+    height: 600px;
+    width: 500px;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    
+}
+
+
+
+
+/* -----FOOTER----- */
+
+.container4{
+    background-color: #707070;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+    .mj{
+        margin-left: 50px;
+
+    }
+        .mj .iconify{
+            color:#FF8000;
+            font-size: 40px;
+            transition: .4s linear;
+        }
+        
+        .mj .iconify:hover{
+            font-size: 50px;
+            transition: .4s linear;
+        }
+
+    .fb{
+        font-size: 30px;
+        border: none;
+        border-bottom: 2px solid #FF8000;
+        font-family: 'Antonio', cursive;
+    }
+        .fb a{
+            text-decoration: none;
+            color:#fff;
+            transition: 0.4s linear;
+        }
+        .fb a:hover{
+            font-size: 35px;
+            transition: 0.4s linear;
+        }
+
+    .ig{
+        font-size: 30px;
+        border: none;
+        border-bottom: 2px solid #FF8000;
+        font-family: 'Antonio', cursive;
+
+    }
+        .ig a{
+            text-decoration: none;
+            color:#fff;
+            transition: 0.4s linear;
+        }
+        .ig a:hover{
+            font-size: 35px;
+            transition: 0.4s linear;
+        }
+
+    .fl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF8000;
+        height: 100px;
+        width: 100px;
+    }
+    
+        .fl .iconify{
+            color:#fff;
+            font-size: 40px;
+        }
