@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Gmail.css">
+    <link rel="stylesheet" href="/css/juego.css">
     <link rel="icon" href="/images/favicon.ico">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> 
-    <title>Formulario Gimail</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+    <title>Juego</title>
 </head>
 <body class="degrade">
   <!-----HEADER----->
   <header class="container1">
-    <div class="logo"><span>Urban Monster</span></div>
+    <div class="logo"><span>Juego</span></div>
       <nav class="Navigation">
         <ul class="container2">
           <li><a href="index.html">Inicio</a></li>
@@ -24,18 +25,20 @@
       </nav>      
     </header>
     <!-------------->
-    
     <!-----BODY----->
     <div class="container3">
-      <form action="" class="form">
-        <h2>Contacto Correo</h2>
-        <label for="Motivo">Motivo</label>
-        <input type="text" name="Motivo">
-        <label for="Correo">Correo</label>
-        <input type="email" name="Correo">
-        <button class="Button">Enviar</button>
-      </form>
-    </div>
+      
+      <canvas
+      class="canvas"
+      height="450"
+      width="450"
+      style="background-color: #3e3e3e">
+    </canvas>
+    <h1 class="Puntaje">Puntaje: </h1>
+    <h1 class="score"></h1>
+  </div>
+   
+    <script src="juego.js"></script>
     <!-------------->
     <!------------FOOTER------------>
     <footer class="container4">
@@ -52,6 +55,10 @@
 
 
 
+
+
+
+                
 
 
 

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/*-----HEADER-----*/
+
+.container1{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px; 
+    height: 50%; 
+    flex-wrap: wrap;
+}
+
+    .logo{
+        /* border: 1px solid green; */
+        display: inline-block;
+        padding:0; 
+        margin-left:50px;
+        font-family: 'Zen Dots', sans-serif;
+        font-size: 40px;
+        color:#FF8000;
+    }   
+    .logo span{
+
+        text-shadow: 10px 10px 10px #151515;
+    } 
+    .logo span:hover{
+        font-size: 45px;
+        transition: 0.4s linear;
+    }
+
+    .container2{
+        /* border: 2px solid blue;  */
+        display: flex; 
+        padding: 15px;
+        margin: 20px;
+        height: 100px;
+        margin-right: 50px;
+        width: 35em;
+        background-color:#707070;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 10px 10px 10px #151515;
+    }
+
+        ul li{
+            list-style: none;
+            padding: 3px;
+        }
+
+            ul li a{
+                text-decoration: none;
+                border-radius: 3px; 
+                padding: 10px;
+                color: #fff;
+                font-family: 'Antonio', cursive;
+                font-size: 25px;
+                transition: all 0.3s linear;
+            }
+
+            ul li a:hover{
+                background-color: rgba(255,128,0,.6);
+                transition: all 0.3s linear;
+                color: #2E2E2E;
+                padding: 15px;
+            }
+
+/*-----BODY-----*/
+
+.degrade{
+    width: 100%;
+    background: rgb(46,46,46);
+    background: linear-gradient(90deg, rgba(46,46,46,1) 25%, rgba(68,67,67,1) 51%, rgba(73,72,72,1) 81%, rgba(107,105,105,1) 100%); 
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 690px;
+}
+canvas {
+      border: solid 5px #2E2E2E;
+      background: rgb(46,46,46)
+    }
+.Puntaje{
+    color: #fff;
+    margin-top: 10px;
+}
+.score{
+    margin-top: 10px;
+    color: #FF8000;
+}
+
+/* -----FOOTER----- */
+
+.container4{
+    background-color: #707070;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+    .mj{
+        margin-left: 50px;
+
+    }
+        .mj .iconify{
+            color:#FF8000;
+            font-size: 40px;
+            transition: .4s linear;
+        }
+        
+        .mj .iconify:hover{
+            font-size: 50px;
+            transition: .4s linear;
+        }
+
+    .fb{
+        font-size: 30px;
+        border: none;
+        border-bottom: 2px solid #FF8000;
+        font-family: 'Antonio', cursive;
+    }
+        .fb a{
+            text-decoration: none;
+            color:#fff;
+            transition: 0.4s linear;
+        }
+        .fb a:hover{
+            font-size: 35px;
+            transition: 0.4s linear;
+        }
+
+    .ig{
+        font-size: 30px;
+        border: none;
+        border-bottom: 2px solid #FF8000;
+        font-family: 'Antonio', cursive;
+
+    }
+        .ig a{
+            text-decoration: none;
+            color:#fff;
+            transition: 0.4s linear;
+        }
+        .ig a:hover{
+            font-size: 35px;
+            transition: 0.4s linear;
+        }
+
+    .fl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF8000;
+        height: 100px;
+        width: 100px;
+    }
+    
+        .fl .iconify{
+            color:#fff;
+            font-size: 40px;
+        }
