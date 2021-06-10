@@ -33,10 +33,6 @@ window.addEventListener('keydown', ((evt) => {
   snake.changeDirection(direction);
 }));
 
-
-
-
-
 function Snake() {
     this.x = 0;
     this.y = 0;
@@ -124,13 +120,6 @@ function Snake() {
       }
     }
   }
-
-
-
-
-
-
-
 
 function Fruit() {
   this.x;
